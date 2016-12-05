@@ -1,0 +1,36 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install build-essential
+
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install -g bower
+      - npm install -g grunt-cli
+      - npm install forever -g
+      
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm install
+      - bower install --allow-root
+
+      
+  Post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+   type: zip
+   files:
+      - bower.json
+      - index.html
+      - package.json
+      - app.js
+      - cron.yaml
+      - css/
+      - assets/

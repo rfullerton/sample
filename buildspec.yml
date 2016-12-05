@@ -32,5 +32,3 @@ artifacts:
       - package.json
       - app.js
       - cron.yaml
-      - css/
-      - assets/

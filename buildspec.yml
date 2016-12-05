@@ -3,27 +3,26 @@ version: 0.1
 phases:
   install:
     commands:
+      - echo Installing install commands section...
       - apt-get update -y
       - apt-get install build-essential
-
   pre_build:
     commands:
+      - echo Installing pre_build commands section...
       - echo Installing source NPM dependencies...
       - npm install -g bower
       - npm install -g grunt-cli
-      - npm install forever -g
-      
+      - npm install forever -g  
   build:
     commands:
+      - echo Installing build commands section...
       - echo Build started on `date`
       - npm install
-      - bower install --allow-root
-
-      
-  Post_build:
+      - bower install      
+  post_build:
     commands:
+      - echo Installing ppost_build commands section...
       - echo Build completed on `date`
-
 artifacts:
    type: zip
    files:

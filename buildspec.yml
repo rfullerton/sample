@@ -32,3 +32,4 @@ artifacts:
       - app.js
       - cron.yaml
       - scripts/*
+      -	appspec.yml

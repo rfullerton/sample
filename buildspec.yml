@@ -31,4 +31,4 @@ artifacts:
       - package.json
       - app.js
       - cron.yaml
-      - scripts/
+      - scripts/*

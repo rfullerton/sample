@@ -34,3 +34,4 @@ artifacts:
       - cron.yaml
       - appspec.yml
       - scripts/*
+      - bower_components/*

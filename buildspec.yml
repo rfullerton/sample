@@ -3,6 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
+      - cat /etc/passwd
       - echo Installing install commands section...
       - apt-get update -y
       - apt-get install build-essential

@@ -19,7 +19,7 @@ phases:
       - echo Installing build commands section...
       - echo Build started on `date`
       - npm install
-      - bower install --allow-root   
+      - bower install  
   post_build:
     commands:
       - echo Installing ppost_build commands section...
